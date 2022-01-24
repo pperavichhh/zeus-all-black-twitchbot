@@ -1,5 +1,5 @@
 import tmi from 'tmi.js'
-import { BOT_USERNAME , OAUTH_TOKEN, CHANNEL_NAME } from './constant'
+
 
 const options = {
 	options: { debug: true },
@@ -11,10 +11,10 @@ const options = {
     reconnectInterval: 1000,
 	},
 	identity: {
-		username: BOT_USERNAME,
-		password: OAUTH_TOKEN
+		username: 'zeusallblackbot',
+		password: 'aywy1l8gvvgpv2gzzyir3m04otl88s'
 	},
-	channels: [ CHANNEL_NAME ]
+	channels: [ "zeusallblack" ]
 }
 
 const client = new tmi.Client(options)
