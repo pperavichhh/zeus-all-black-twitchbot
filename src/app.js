@@ -101,7 +101,7 @@ function onGiftPaidUpgradeHandler(channel, username, sender, userstate) {
 
 function onHostingHandler(channel, target, viewers) {
   client.say(channel,
-    `เทำเจ้าแบงค์กำลัง Hosting ${target} ด้วยคนดู ${viewers} คน`
+    `เทพเจ้าแบงค์กำลัง Hosting ${target} ด้วยคนดู ${viewers} คน`
   )
 }
 
