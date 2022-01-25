@@ -7,7 +7,7 @@ const options = {
     reconnect: true,
     secure: true,
     timeout: 180000,
-    reconnectDecay: 1.4,
+    reconnectDecay: 1.3,
     reconnectInterval: 1000,
 	},
 	identity: {
