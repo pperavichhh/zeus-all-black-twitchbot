@@ -83,7 +83,7 @@ function onRaidedHandler(channel, username, viewers) {
 
 function onSubscriptionHandler(channel, username, method, message, userstate) {
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับการติดตามด้วยนะค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับซับด้วยนะค้าบ`
   )
 }
 
@@ -109,7 +109,7 @@ function onHostingHandler(channel, target, viewers) {
 function resubHandler(channel, username, months, message, userstate, methods) {
   const cumulativeMonths = userstate['msg-param-cumulative-months']
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับซํบ ${cumulativeMonths}เดือน ด้วยค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับซับ ${cumulativeMonths}เดือน ด้วยค้าบ`
   )
 }
 
