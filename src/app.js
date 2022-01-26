@@ -63,10 +63,6 @@ client.on('message', (channel, userstate, message, self) => {
     return
   }
   
-  if(message.toLowerCase() === '!github') {
-    github(channel)
-    return
-  }
 })
 
 // function onMessageHandler (channel, userstate, message, self) {
@@ -124,9 +120,6 @@ function subGiftHandler(channel, username, streakMonths, recipient, methods, use
     `ขอบคุณ คุณ @${username} ที่ giftsub ให้ คุณ ${recipient} ด้วยค้าบ`
   )
   
- function github (channel){
-   client.say(channel ,`https://github.com/pperavichhh/zeus-all-black-twitchbot`)
- }
 
   // this comes back as a boolean from twitch, disabling for now
   // "msg-param-sender-count": false
