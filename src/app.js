@@ -62,6 +62,11 @@ client.on('message', (channel, userstate, message, self) => {
   if(self) {
     return
   }
+  
+  if(message.toLowerCase() === '!github') {
+    github(channel)
+    return
+  }
 })
 
 // function onMessageHandler (channel, userstate, message, self) {
@@ -95,7 +100,7 @@ function onCheerHandler(channel, userstate, message)  {
 
 function onGiftPaidUpgradeHandler(channel, username, sender, userstate) {
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับการต่อซํบที่ได้มาจาก gift sub ด้วยค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับการต่อซับที่ได้มาจาก gift sub ด้วยค้าบ`
   )
 }
 
@@ -109,7 +114,7 @@ function onHostingHandler(channel, target, viewers) {
 function resubHandler(channel, username, months, message, userstate, methods) {
   const cumulativeMonths = userstate['msg-param-cumulative-months']
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับซับ ${cumulativeMonths}เดือน ด้วยค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับซับ ${cumulativeMonths} เดือน ด้วยค้าบ`
   )
 }
 
@@ -118,6 +123,10 @@ function subGiftHandler(channel, username, streakMonths, recipient, methods, use
   client.say(channel,
     `ขอบคุณ คุณ @${username} ที่ giftsub ให้ คุณ ${recipient} ด้วยค้าบ`
   )
+  
+ function github (channel){
+   client.say(channel ,`https://github.com/pperavichhh/zeus-all-black-twitchbot`)
+ }
 
   // this comes back as a boolean from twitch, disabling for now
   // "msg-param-sender-count": false
