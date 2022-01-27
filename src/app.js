@@ -59,10 +59,12 @@ client.on('subgift', (channel, username, streakMonths, recipient, methods, users
 // event handlers
 
 client.on('message', (channel, userstate, message, self) => {
-  if(self) {
-    return
+  if(message=="$github") {
+    client.say(channel,"https://github.com/pperavichhh/zeus-all-black-twitchbot")
   }
-  
+  if(message=="$clear"){
+    client.clear("zeusallblack");
+  }
 })
 
 // function onMessageHandler (channel, userstate, message, self) {
@@ -84,7 +86,7 @@ function onRaidedHandler(channel, username, viewers) {
 
 function onSubscriptionHandler(channel, username, method, message, userstate) {
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับซับด้วยนะค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับการติดตามด้วยนะค้าบ`
   )
 }
 
@@ -96,13 +98,13 @@ function onCheerHandler(channel, userstate, message)  {
 
 function onGiftPaidUpgradeHandler(channel, username, sender, userstate) {
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับการต่อซับที่ได้มาจาก gift sub ด้วยค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับการต่อซํบที่ได้มาจาก gift sub ด้วยค้าบ`
   )
 }
 
 function onHostingHandler(channel, target, viewers) {
   client.say(channel,
-    `เทพเจ้าแบงค์กำลัง Hosting ${target} ด้วยคนดู ${viewers} คน`
+    `เทำเจ้าแบงค์กำลัง Hosting ${target} ด้วยคนดู ${viewers} คน`
   )
 }
 
@@ -110,7 +112,7 @@ function onHostingHandler(channel, target, viewers) {
 function resubHandler(channel, username, months, message, userstate, methods) {
   const cumulativeMonths = userstate['msg-param-cumulative-months']
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับซับ ${cumulativeMonths} เดือน ด้วยค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับซํบ ${cumulativeMonths}เดือน ด้วยค้าบ`
   )
 }
 
@@ -119,7 +121,6 @@ function subGiftHandler(channel, username, streakMonths, recipient, methods, use
   client.say(channel,
     `ขอบคุณ คุณ @${username} ที่ giftsub ให้ คุณ ${recipient} ด้วยค้าบ`
   )
-  
 
   // this comes back as a boolean from twitch, disabling for now
   // "msg-param-sender-count": false
