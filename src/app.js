@@ -98,7 +98,7 @@ function onCheerHandler(channel, userstate, message)  {
 
 function onGiftPaidUpgradeHandler(channel, username, sender, userstate) {
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับการต่อซํบที่ได้มาจาก gift sub ด้วยค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับการต่อซับที่ได้มาจาก gift sub ด้วยค้าบ`
   )
 }
 
@@ -112,7 +112,7 @@ function onHostingHandler(channel, target, viewers) {
 function resubHandler(channel, username, months, message, userstate, methods) {
   const cumulativeMonths = userstate['msg-param-cumulative-months']
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับซํบ ${cumulativeMonths}เดือน ด้วยค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับซับ ${cumulativeMonths} เดือน ด้วยค้าบ`
   )
 }
 
