@@ -86,7 +86,7 @@ function onRaidedHandler(channel, username, viewers) {
 
 function onSubscriptionHandler(channel, username, method, message, userstate) {
   client.say(channel,
-    `ขอบคุณ คุณ @${username} สำหรับการติดตามด้วยนะค้าบ`
+    `ขอบคุณ คุณ @${username} สำหรับการซับด้วยนะค้าบ`
   )
 }
 
