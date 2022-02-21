@@ -11,7 +11,7 @@ const options = {
     reconnectInterval: 1000,
 	},
 	identity: {
-		username: 'zeusallblackbot',
+		username: 'zeusallblackbot', 'bruttiesboo_',
 		password: 'aywy1l8gvvgpv2gzzyir3m04otl88s'
 	},
 	channels: [ "zeusallblack" ]
