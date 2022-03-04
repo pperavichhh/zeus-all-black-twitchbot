@@ -59,8 +59,26 @@ client.on('subgift', (channel, username, streakMonths, recipient, methods, users
 // event handlers
 
 client.on('message', (channel, userstate, message, self) => {
-  if(message=="$github") {
+  if(message=="!github") {
     client.say(channel,"https://github.com/pperavichhh/zeus-all-black-twitchbot")
+  }
+  if(message=="!dis") {
+    client.say(channel,"มาเข้ากันได้นะครับ มีแจ้งเตือนสตรีมและข่าวสารต่างๆ เข้ามาพูดคุยกับผมเยอะๆนะครับ https://discord.gg/Jy9hqPuwjc")
+  }
+  if(message="!donate") {
+    client.say(channel, "	0158553937 KBANK ยุทธนากร แก้วกองใหญ่")
+  }
+  if(message="!mapsettings"){
+   client.say(channel,"https://clips.twitch.tv/AdorableSeductiveSproutShazBotstix-EEgHFnua4qDq_Rwb") 
+  }
+  if(message="!keyboard"){
+   client.say(channel,"Xtrfy K4") 
+  }
+  if(message="!sub"){
+   client.say(channel,"อุดหนุนผมได้ผ่าน sub นะครับ เดือนละ 69 บาทครับผมม https://www.twitch.tv/subs/zeusallblack") 
+  }
+  if(message="!vdosettings"){
+   client.say(channel,"	https://clips.twitch.tv/StylishSincereCobblerAMPTropPunch-SrLHkTJ6XOXQXtnF") 
   }
   if(message=="$clear"){
     client.clear("zeusallblack");
