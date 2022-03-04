@@ -65,9 +65,6 @@ client.on('message', (channel, userstate, message, self) => {
   if(message=="!dis") {
     client.say(channel,"มาเข้ากันได้นะครับ มีแจ้งเตือนสตรีมและข่าวสารต่างๆ เข้ามาพูดคุยกับผมเยอะๆนะครับ https://discord.gg/Jy9hqPuwjc")
   }
-  if(message="!donate") {
-    client.say(channel, "	0158553937 KBANK ยุทธนากร แก้วกองใหญ่")
-  }
   if(message="!mapsettings"){
    client.say(channel,"https://clips.twitch.tv/AdorableSeductiveSproutShazBotstix-EEgHFnua4qDq_Rwb") 
   }
