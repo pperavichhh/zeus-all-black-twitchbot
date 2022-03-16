@@ -63,11 +63,6 @@ client.on('message', (channel, userstate, message, self) => {
   if(message=="$clear"){
     client.clear("zeusallblack");
   }
-client.on('message', (channel, userstate, message, self) => {
-  
-  if(message=="!ig"){
-    client.say("bankbathh");
-  }
 })
 
 // function onMessageHandler (channel, userstate, message, self) {
